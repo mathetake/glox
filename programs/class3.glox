@@ -1,0 +1,15 @@
+class Foo {
+  init() {
+    return;
+  }
+  hi(){
+    print "hi!";
+  }
+}
+
+
+var f = Foo();
+f.hi();
+
+var a = f.init();
+a.hi();

@@ -1,0 +1,29 @@
+var a = 100;
+class Foo {
+  init(v) {
+   a = a +100;
+   this.value = v;
+  }
+
+  increment() {
+    a = a + 100;
+    this.value = this.value +1;
+  }
+}
+
+var foo = Foo(100);
+print foo.value;
+print a;
+print "----";
+
+foo.increment();
+print foo.value;
+print a;
+
+var foo2 = foo.init(10);
+foo2.increment();
+
+
+print "----";
+print foo.value;
+print a;

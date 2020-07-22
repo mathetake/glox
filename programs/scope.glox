@@ -1,0 +1,11 @@
+var a = 10;
+var b = 20;
+{
+    a = a + 100;
+    print a;
+    var b = 200;
+    print b;
+}
+
+print a;
+print b;

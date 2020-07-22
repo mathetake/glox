@@ -1,0 +1,36 @@
+var weisoiya = -1000;
+
+class Cake {
+  taste() {
+    this.counter = weisoiya;
+    var adjective = "delicious";
+    print "The " + this.flavor + " cake is " + adjective + "!";
+  }
+}
+
+var cake = Cake();
+cake.flavor = "German chocolate";
+cake.taste(); // Prints "The German chocolate cake is delicious!".
+print cake;
+
+
+class Thing {
+  getCallback() {
+    fun localFunction() {
+      return this;
+    }
+
+    return localFunction;
+  }
+
+  say() {
+    print "hi!";
+  }
+}
+
+var thing = Thing();
+var callback = thing.getCallback();
+var t = callback();
+t.say();
+t.weisoiya = 1000;
+print thing.weisoiya;

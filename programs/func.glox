@@ -1,0 +1,12 @@
+fun sayHi(n) {
+    if (n > 1)
+        sayHi(n-1);
+    print "Hi!!!";
+}
+
+fun say() {
+    print "say...?";
+}
+
+say();
+sayHi(5);
